@@ -1,0 +1,19 @@
+{
+  "user": {
+    "id": "1",
+    "name": "zhangbing"
+  },
+  "notify": {
+    "model": "leads",
+    "content": [
+      {
+        "type": 1,
+        "msg": "单人精彩套餐"
+      },
+      {
+        "type": 2,
+        "msg": "该商家支持发票,请下单写好发票抬头"
+      }
+    ]
+  }
+}
