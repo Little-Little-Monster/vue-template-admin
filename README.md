@@ -1,6 +1,10 @@
-# onlyhi-front-end
+# vue-template-admin
 
-> A Vue.js project
+> Vue1.x+Webpack+vue-cli+AmazeUI搭建的后台管理系统模板
+
+## screenshot
+
+![screenshot.png](./screenshot.png)
 
 ## Build Setup
 
