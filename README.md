@@ -6,6 +6,8 @@
 
 ![screenshot.png](./screenshot.png)
 
+AmazeUI模板地址：[http://tpl.amazeui.org/content.html?21](http://tpl.amazeui.org/content.html?21)
+
 ## Build Setup
 
 ``` bash
