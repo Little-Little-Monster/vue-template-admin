@@ -1,17 +1,13 @@
 import App from './App';
-import Hello from 'components/hello/hello';
-import Index from 'components/index/index';
-import NotPage from 'components/NotPage/NotPage';
+import NotPage from 'dashborader/NotPage/NotPage.vue';
+import Login from 'dashborader/login/login.vue';
 
-import Header from 'dashborader/header/header';
-import Login from 'dashborader/login/login';
+import Hello from 'dashborader/hello/hello.vue';
 
 export default function(router){
   router.map({
     '/login': { component: Login },
-    '/hello': { component: Hello },
-    '/header': { component: Header },
-    '/404': { component: NotPage }
+    '/hello': { component: Hello }
   });
 
   router.start(App, '#app');

@@ -1,18 +1,48 @@
 {
   "user": {
     "id": "1",
-    "name": "zhangbing"
+    "loginName": "zhangbing",
+    "avatar": "http://u3.tdimg.com/4/196/101/_12311316749039903152565996091108798974.jpg",
+    "name": "张兵"
   },
-  "notify": {
-    "model": "leads",
-    "content": [
+  "menu": {
+    "menus": [
       {
-        "type": 1,
-        "msg": "单人精彩套餐"
+        "text": "首页",
+        "url": "/",
+        "icon": "http://cdn.img0.onlyhi.com/img/icon-home.png",
+        "secondMenus": []
       },
       {
-        "type": 2,
-        "msg": "该商家支持发票,请下单写好发票抬头"
+        "text": "权限管理",
+        "url": "/authority",
+        "icon": "http://cdn.img0.onlyhi.com/img/icon-authority.png",
+        "secondMenus": [
+          { "text": "资源管理", "url": "/authority/resource", "icon": "http://cdn.img0.onlyhi.com/img/icon-authority-resource.png" },
+          { "text": "角色管理", "url": "/authority/role", "icon": "http://cdn.img0.onlyhi.com/img/icon-authority-role.png" },
+          { "text": "用户管理", "url": "/authority/user", "icon": "http://cdn.img0.onlyhi.com/img/icon-authority-user.png" },
+          { "text": "部门管理", "url": "/authority/department", "icon": "http://cdn.img0.onlyhi.com/img/icon-authority-department.png" },
+          { "text": "团队", "url": "/authority/team", "icon": "http://cdn.img0.onlyhi.com/img/icon-authority-team.png" },
+          { "text": "职位", "url": "/authority/posts", "icon": "http://cdn.img0.onlyhi.com/img/icon-authority-posts.png" }
+        ]
+      },
+      {
+        "text": "销售与客服",
+        "url": "/sale",
+        "icon": "http://cdn.img0.onlyhi.com/img/icon-sale.png",
+        "secondMenus": [
+          { "text": "新名单分配", "url": "/sale/leads", "icon": "http://cdn.img0.onlyhi.com/img/icon-sale-leads.png" },
+          { "text": "待跟进", "url": "/sale/waitFllow", "icon": "http://cdn.img0.onlyhi.com/img/icon-sale-waitFllow.png" }
+        ]
+      },
+      {
+        "text": "市场与运营",
+        "url": "/operation",
+        "icon": "http://cdn.img0.onlyhi.com/img/icon-operation.png",
+        "secondMenus": [
+          { "text": "渠道投放", "url": "/operation/channel", "icon": "http://cdn.img0.onlyhi.com/img/icon-operation-channel.png" },
+          { "text": "渠道类别", "url": "/operation/channelType", "icon": "http://cdn.img0.onlyhi.com/img/icon-operation-channelType.png" }
+        ]
       }
     ]
   }

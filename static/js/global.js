@@ -1,21 +1,16 @@
 $(function() {
-    // 读取body data-type 判断是哪个页面然后执行相应页面方法，方法在下面。
-    var dataType = $('body').attr('data-type');
-    console.log(dataType);
-    for (key in pageData) {
-        if (key == dataType) {
-            pageData[key]();
-        }
-    }
-
     autoLeftNav();
     $(window).resize(function() {
         autoLeftNav();
         console.log('window.width',$(window).width());
+        console.log('window.height',$(window).height());
     });
 
-    // 侧边菜单
-    $('.sidebar-nav-sub-title').on('click', function() {
+    //设置左侧菜单高度
+    $('#left-sidebar').height($(window).height() - $('header').height());
+
+    // 二级菜单
+    $('body').on('click','.sidebar-nav-sub-title', function() {
         $(this).siblings('.sidebar-nav-sub').slideToggle(80)
         .end()
         .find('.sidebar-nav-sub-ico').toggleClass('sidebar-nav-sub-ico-rotate');
@@ -34,24 +29,9 @@ $(function() {
     });
 });
 
-
-// 页面数据
-var pageData = {
-    // ===============================================
-    // 首页
-    // ===============================================
-    'index': function indexData() {
-        $('#example-r').DataTable({
-            bInfo: false, //页脚信息
-            dom: 'ti'
-        });
-    }
-};
-
-
 // 侧边菜单开关
 function autoLeftNav() {
-    $('.tpl-header-switch-button').on('click', function() {
+    $('body').on('click','.tpl-header-switch-button', function() {
         if ($('.left-sidebar').is('.active')) {
           if ($(window).width() > 1024) {
             $('.tpl-content-wrapper').removeClass('active');

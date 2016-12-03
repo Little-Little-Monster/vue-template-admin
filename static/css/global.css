@@ -267,6 +267,7 @@ ul.tpl-dropdown-content .tpl-dropdown-menu-messages-item .menu-messages-content 
   transition: all 0.4s ease-in-out;
   width: 240px;
   min-height: 100%;
+  overflow-y: auto;
   padding-top: 57px;
   position: absolute;
   z-index: 1104;
